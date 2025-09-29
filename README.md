@@ -19,12 +19,26 @@
 
 ### 1. Установить Python и создать виртуальное окружение
 
-```bash
-Быстрый запуск
-### sudo apt update
-### sudo apt install -y python3.### 13-venv
-### python3.13 -m venv .venv
-### source .venv/bin/activate
+sudo apt update
+sudo apt install -y python3.13-venv
+python3.13 -m venv .venv
+source .venv/bin/activate
+### 2. Установить зависимости
+
+pip install -U pip
+pip install -r requirements.txt
+
+### 3. Запустить EDA
+
+Версия Python: 3.12+ (рекомендуется).
+
+Зависимости: см. requirements.txt.
+
+IDE: VS Code.
+
+Выбор интерпретатора:
+Ctrl+Shift+P → Python: Select Interpreter → путь к ./.venv/bin/python.
+
 Структура проекта
 LR1/
 ├─ eda/                 # скрипты EDA
@@ -34,7 +48,7 @@ LR1/
 ├─ .vscode/             # настройки VS Code
 └─ README.md            # описание проекта
 
-
+### Визуализация данных.
 В проекте строятся как статичные графики, так и интерактивные :
 
 Гистограммы числовых признаков (age, cholesterol, trestbps, thalach и др.)
