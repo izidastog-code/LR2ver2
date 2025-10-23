@@ -1,0 +1,14 @@
+nohup: ввод игнорируется
+[2025-10-19 20:41:03 +0300] [5590] [INFO] Starting gunicorn 23.0.0
+[2025-10-19 20:41:03 +0300] [5590] [ERROR] Connection in use: ('127.0.0.1', 5000)
+[2025-10-19 20:41:03 +0300] [5590] [ERROR] connection to ('127.0.0.1', 5000) failed: [Errno 98] Address already in use
+[2025-10-19 20:41:04 +0300] [5590] [ERROR] Connection in use: ('127.0.0.1', 5000)
+[2025-10-19 20:41:04 +0300] [5590] [ERROR] connection to ('127.0.0.1', 5000) failed: [Errno 98] Address already in use
+[2025-10-19 20:41:05 +0300] [5590] [ERROR] Connection in use: ('127.0.0.1', 5000)
+[2025-10-19 20:41:05 +0300] [5590] [ERROR] connection to ('127.0.0.1', 5000) failed: [Errno 98] Address already in use
+[2025-10-19 20:41:06 +0300] [5590] [ERROR] Connection in use: ('127.0.0.1', 5000)
+[2025-10-19 20:41:06 +0300] [5590] [ERROR] connection to ('127.0.0.1', 5000) failed: [Errno 98] Address already in use
+[2025-10-19 20:41:07 +0300] [5590] [ERROR] Connection in use: ('127.0.0.1', 5000)
+[2025-10-19 20:41:07 +0300] [5590] [ERROR] connection to ('127.0.0.1', 5000) failed: [Errno 98] Address already in use
+[2025-10-19 20:41:08 +0300] [5590] [ERROR] Can't connect to ('127.0.0.1', 5000)
+Running the mlflow server failed. Please see the logs above for details.
