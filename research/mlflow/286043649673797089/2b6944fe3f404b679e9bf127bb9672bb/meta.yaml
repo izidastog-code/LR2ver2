@@ -1,0 +1,15 @@
+artifact_uri: file:///home/user/my_proj/research/mlflow/286043649673797089/2b6944fe3f404b679e9bf127bb9672bb/artifacts
+end_time: 1761504703063
+entry_point_name: ''
+experiment_id: '286043649673797089'
+lifecycle_stage: active
+run_id: 2b6944fe3f404b679e9bf127bb9672bb
+run_name: DT_cv_depth=3
+run_uuid: 2b6944fe3f404b679e9bf127bb9672bb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1761504702630
+status: 3
+tags: []
+user_id: user
