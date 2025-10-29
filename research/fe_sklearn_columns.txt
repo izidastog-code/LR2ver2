@@ -1,0 +1,27 @@
+poly2_scale__age
+poly2_scale__sex
+poly2_scale__cp
+poly2_scale__age^2
+poly2_scale__age sex
+poly2_scale__age cp
+poly2_scale__sex^2
+poly2_scale__sex cp
+poly2_scale__cp^2
+kbins__trestbps_0.0
+kbins__trestbps_1.0
+kbins__trestbps_2.0
+kbins__trestbps_3.0
+kbins__trestbps_4.0
+kbins__chol_0.0
+kbins__chol_1.0
+kbins__chol_2.0
+kbins__chol_3.0
+kbins__chol_4.0
+kbins__fbs_0.0
+num_rest_scale__restecg
+num_rest_scale__thalach
+num_rest_scale__exang
+num_rest_scale__oldpeak
+num_rest_scale__slope
+num_rest_scale__ca
+num_rest_scale__thal
