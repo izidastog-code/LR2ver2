@@ -1,14 +1,15 @@
-#!/bin/bash
-# === start_mlflow.sh ===
-# Скрипт запуска MLflow UI для локального проекта
+#!/usr/bin/env bash
+set -e
 
-# Папка для логов и артефактов (тот же путь, что в ноутбуке)
-BACKEND_STORE_URI="./mlflow"
-PORT=5000
+# Рабочая директория: ./mlflow
+THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$THIS_DIR"
 
-echo "Запуск MLflow UI..."
-echo "URI: ${BACKEND_STORE_URI}"
-echo "Открой в браузере: http://127.0.0.1:${PORT}"
+export MLFLOW_TRACKING_URI="http://127.0.0.1:5000"
 
-# Если нужно — можно сменить порт, например, на 5001
-mlflow ui --backend-store-uri "${BACKEND_STORE_URI}" --port ${PORT}
+mlflow server \
+  --backend-store-uri sqlite:///mlruns.db \
+  --registry-store-uri sqlite:///mlruns.db \
+  --artifacts-destination ./mlartifacts \
+  --host 127.0.0.1 \
+  --port 5000
