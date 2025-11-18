@@ -1,4 +1,14 @@
-pip freeze > requirements.txt
-git add requirements.txt
-git commit -m "Update requirements.txt with dependencies"
-git push origin main
+numpy>=2.2,<3
+scipy>=1.14
+pandas>=2.2
+scikit-learn>=1.6
+
+mlflow-skinny==2.16
+# UI добавляется отдельной командой:
+# pip install --no-deps mlflow==2.16
+
+sqlalchemy>=2,<3
+alembic>=1.13,<2
+category-encoders>=2.6.3
+mlxtend>=0.23.1
+optuna>=3.6.1
